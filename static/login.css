@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+
+
+
+body, html {
+    height: 100%;
+    background: black;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+#fullview-btn:hover {
+    background-color: #2980b9;
+}
+
+#login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(48, 46, 45, 0.8);
+    min-width: 17.5vw;
+    margin: 0 auto;
+    color: blanchedalmond;
+    min-height: 25vh;
+    z-index: 3;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+#login-box:hover {
+    border: 2px solid #2980b9;
+    background: rgba(38, 38, 38, 0.9);
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto 1.5vh;
+    border-radius: 50%;
+}
+
+.logo-caption {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: aqua;
+    font-weight: 700;
+    font-size: 2em; 
+    text-align: center;
+    margin-bottom: 1rem; 
+    transition: color 0.3s ease;
+}
+
+#login-box:hover .logo-caption {
+    color: #b1c900;
+}
+
+.tweak {
+    color: #b1c900;
+}
+
+.btn-custom {
+    
+    margin-top:8%;
+    background: #99ff00;
+    border-color: rgba(48, 46, 45, 1);
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+    width: 100%;
+    padding: 1rem; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: #4CAF50;
+    border-color: #b1c900;
+    transform: scale(1.05);
+}
+
+
+
+form     {
+    
+    
+    position: relative;
+    z-index: 2;
+}
+
+form input  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(43, 203, 54, 0.2);
+    width: 30rem;
+    border-radius: 3px;
+    padding-top: 1.5vh; 
+    padding-top: 1.5vh; 
+    padding-left: 0.75vw; 
+    padding-right: 0.75vw; 
+    margin: 0 auto 15px auto; 
+    display: block;
+    text-align: left;
+    font-size: medium;
+    color: #53e3a6;
+    transition-duration: 0.25s;
+    font-weight: 400;
+}
+
+form input::placeholder {
+    color: white;
+    font-weight: 400;
+}
+
+form input:hover {
+    background-color: darkslategrey;
+}
+
+
+form input:not([type="checkbox"]):not(.custom-checkbox):focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: greenyellow;
+    border-color: #99ff00;
+    width: 33rem; 
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.password-container {
+    position: relative;
+
+}
+
+.eye-icon {
+    position: absolute;
+    display: inline;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.forgot-password {
+    margin-top: 10%;
+   
+    font-size: 2rem; 
+    color: white;
+    cursor: pointer; 
+    text-align: right;
+}
+
+.forgot-password:hover {
+    color :#99ff00; 
+}
+
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    
+}
+
+.login-as-admin {
+    background-color:rgb(47, 47, 77) ;
+    color: #fff;
+    border: none;
+    width: 8rem; 
+    height: 3.5rem; 
+}
+
+.login-as-admin:hover {
+    background-color:#2980b9  ;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 3px;
+    position: relative;
+}
+
+/* Style the custom checkbox when checked */
+.custom-checkbox:checked {
+    background-color: #007bff;
+}
+
+/* Style the inner checkmark */
+.custom-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the inner checkmark when checkbox is checked */
+.custom-checkbox:checked:after {
+    display: block;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
